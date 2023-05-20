@@ -1,20 +1,9 @@
-import React, { useState } from "react";
-import ClipLoader from "react-spinners/ClipLoader";
+import React from 'react'
 
 const Home = () => {
-  const [loading, setLoading] = useState(true);
-
   return (
-    <div style={{ height: "400px" }}>
-      {loading ? (
-        <ClipLoader color="#000" loading={loading} />
-      ) : (
-        <div>
-          <h1>Hello, world!</h1>
-        </div>
-      )}
-    </div>
-  );
-};
+    <div>Home</div>
+  )
+}
 
-export default Home;
+export default Home
