@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import "../Styles/Loading.css"
 import ClipLoader from "react-spinners/ClipLoader";
+import logo from "../Images/logo.svg"
 
 const Loading = () => {
     const [isLoading, setIsLoading] = useState(true);
-    const [loading, setLoading] = useState(true);
+    const loading = useState(true);
 
 
     useEffect(() => {
@@ -19,7 +20,7 @@ const Loading = () => {
         <div>
             {isLoading ? (
                 <div className="main-div">
-                    <img src={require("../Images/logo.png")} alt="logo" className='logo' />
+                    <img src={logo} alt="logo" className='logo' />
                     <div className="display-flex">
                         <h2>Loading...</h2>
                         <div>
@@ -34,7 +35,7 @@ const Loading = () => {
                     </div>
                 </div>
             ) : (
-                <h1>Redirect</h1>
+                window.location.href="/login"
             )}
         </div>
     );
