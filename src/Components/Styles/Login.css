@@ -136,4 +136,8 @@
     .flex-start label {
         font-size: 17px;
     }
+
+    .login_modal form input {
+        margin-bottom: 20px;
+    }
 }

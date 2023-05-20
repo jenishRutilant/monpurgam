@@ -1,0 +1,107 @@
+.w-100 {
+    width: 100% !important;
+    max-width: 500px;
+}
+
+.carousel-caption {
+    color: #000000;
+}
+
+.display-flex-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel-indicators {
+    display: none;
+}
+
+.bg-color {
+    background-color: #407093;
+}
+
+.carousel-control-prev {
+    display: none;
+}
+
+.carousel-control-next {
+    display: none;
+}
+
+.monpur {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    color: #FFFFFF;
+    width: 100%;
+    max-width: 800px;
+}
+
+.monpur-dis {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    width: 100%;
+    max-width: 800px;
+}
+
+.carousel {
+    position: relative;
+    padding: 50px 0;
+}
+
+@media screen and (max-width: 1199px) {
+    .monpur {
+        font-size: 30px;
+        max-width: 500px;
+    }
+
+    .monpur-dis {
+        font-size: 15px;
+        max-width: 500px;
+    }
+
+    .w-100 {
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .w-100 {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .display-flex-slider {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .monpur {
+        max-width: 100%;
+    }
+
+    .monpur-dis {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .monpur {
+        font-size: 23px;
+    }
+
+    .monpur-dis {
+        font-size: 15px;
+    }
+
+    .w-100 {
+        max-width: 300px;
+    }
+}
